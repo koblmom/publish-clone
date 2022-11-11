@@ -1,0 +1,63 @@
+#content_wrapper {
+    padding-top: 75px;
+    #main_banner{
+      background-image: url('/img/bg.jpg');
+      background-attachment: fixed; //pallax주는 옵션
+      height: 60vh;
+      >.container {
+        height: 100%;
+        #main_banner_text{
+          height: 100%;
+          display: flex;
+          flex-direction: column; //옵션변경
+          color: #fff;
+          justify-content: center;
+          h1{
+            margin-top: 100px;
+            font-weight: 400;
+            font-size: 44px;
+            margin-bottom: 10px;
+            &::before {
+              content: "";
+              display: block;
+              width: 75px;
+              height: 4px;
+              background-color: #ffcc00;
+              margin-left: 4px;
+              margin-bottom: 10px;
+            }
+          }
+          h2{
+            font-weight: 400;
+            font-size: 30px;
+          }
+      }
+    }
+  }
+  #main_news{
+    padding-top: 130px;
+    padding-bottom: 125px;
+      #main_news_contents{
+        display: flex;
+        #main_news_thumbnail{
+          width: 450px;
+          height: 230px;
+            a {
+              display: block;
+              width: 100%;
+              height: 100%;
+              overflow: hidden;
+              position: relative;
+              img{
+                width: 100%;
+                height: auto;
+                position: absolute;
+                top:50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+              }
+            }
+        }
+    }
+  }
+}
